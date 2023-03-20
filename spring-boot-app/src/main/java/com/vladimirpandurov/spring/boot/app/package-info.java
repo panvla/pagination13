@@ -1,0 +1,1 @@
+package com.vladimirpandurov.spring.boot.app;
