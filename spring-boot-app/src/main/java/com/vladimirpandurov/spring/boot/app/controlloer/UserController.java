@@ -29,7 +29,7 @@ public class UserController {
                 .status(HttpStatus.OK)
                 .statusCode(HttpStatus.OK.value())
                 .message("Users Retrieved")
-                .data(Map.of("users", this.userService.getUsers(name.orElse(""), page.orElse(0), size.orElse(10))))
+                .data(Map.of("page", this.userService.getUsers(name.orElse(""), page.orElse(0), size.orElse(10))))
                 .build()
         );
     }
